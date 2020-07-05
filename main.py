@@ -117,7 +117,7 @@ def validate(model, loader):
 def load_different_image():
     imgs = []
     for i in range(1, Model.batchSize):
-       imgs.append(preprocessor(cv2.imread("../data/check_image/a ({}).png".format(i), cv2.IMREAD_GRAYSCALE), Model.imgSize, enhance=False))
+       imgs.append(preprocessor(cv2.imread("data/check_image/a ({}).png".format(i), cv2.IMREAD_GRAYSCALE), Model.imgSize, enhance=False))
     return imgs
 
 

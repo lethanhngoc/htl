@@ -18,12 +18,12 @@ from SamplePreprocessor import preprocessor
 
 class FilePaths:
     """ Filenames and paths to data """
-    fnCharList = '../model/charList.txt'
-    fnWordCharList = '../model/wordCharList.txt'
-    fnCorpus = '../data/corpus.txt'
-    fnAccuracy = '../model/accuracy.txt'
-    fnTrain = '../data/'
-    fnInfer = '../data/testImage1.png'  ## path to recognize the single image
+    fnCharList = 'model/charList.txt'
+    fnWordCharList = 'model/wordCharList.txt'
+    fnCorpus = 'data/corpus.txt'
+    fnAccuracy = 'model/accuracy.txt'
+    fnTrain = 'data/'
+    fnInfer = 'data/testImage1.png'  ## path to recognize the single image
 
 
 class Sample:
