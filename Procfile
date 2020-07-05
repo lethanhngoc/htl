@@ -1,5 +1,1 @@
-web: gunicorn src.app
-web: gunicorn src.main
-web: gunicorn src.Model
-web: gunicorn src.DataLoader
-web: gunicorn src.SpellChecker
+web: gunicorn -b 0.0.0.0:5000 src.app:app
