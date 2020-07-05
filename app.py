@@ -1,5 +1,6 @@
 import os
 from datetime import datetime
+import logging
 from flask import Flask, request, render_template, send_from_directory
 
 from main import infer_by_web
@@ -19,21 +20,26 @@ def index():
 
 @app.route("/upload_page", methods=["GET"])
 def upload_page():
+    logging.info("&&&******************************++++++++++++++++++++")
+    logging.error("*******************************++++++++++++++++++++")
     return render_template("upload.html")
 
 
 @app.route("/upload", methods=["POST"])
 def upload():
     # folder_name = request.form['uploads']
+    logging.error("-----this error upload page-----")
     target = os.path.join(APP_ROOT, 'static/')
     print(target)
     if not os.path.isdir(target):
         os.mkdir(target)
     print(request.files.getlist("file"))
+    logging.error('request file------------------------- '+ str(request.files.getlist("file")))
     option = request.form.get('optionsPrediction')
     print("Selected Option:: {}".format(option))
     for upload in request.files.getlist("file"):
         print(upload)
+        logging.error('************************************'+ str(upload))
         print("{} is the file name".format(upload.filename))
         filename = upload.filename
         # This is to verify files are supported
