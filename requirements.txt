@@ -8,5 +8,8 @@ matplotlib>=1.4.3
 pandas>=0.19
 editdistance   
 opencv-python>=3.1.0.0
+libsm6 
+libxrender1 
+libfontconfig1
 autocorrect >=0.3.0
 Pillow
