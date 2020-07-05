@@ -1,0 +1,12 @@
+tensorflow==1.8.0
+Flask
+gunicorn==19.9.0
+numpy>=1.9.2
+scipy>=0.15.1
+scikit-learn>=0.18
+matplotlib>=1.4.3
+pandas>=0.19
+editdistance==0.5.3
+opencv==3.4.1
+autocorrect >=0.3.0
+Pillow
