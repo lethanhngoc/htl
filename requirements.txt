@@ -7,6 +7,6 @@ scikit-learn>=0.18
 matplotlib>=1.4.3
 pandas>=0.19
 editdistance   
-opencv==3.4.1.15
+opencv-python>=3.1.0.0
 autocorrect >=0.3.0
 Pillow
